@@ -1,0 +1,60 @@
+<div id="cont" style="height: 100%;width: 100%;" fxLayout="row" fxLayoutAlign="space-between stretch" >
+    
+    <div
+    style="overflow-x: hidden; max-width: 90vw;" 
+    [style.width]="widthSidebar" 
+    [style.position]="posSidebar"
+    
+    [ngStyle]="themeSidebar" fxLayout="column" fxLayoutAlign="start start"
+        class="app-sidebar" *ngIf="show"
+        [style.border]="borderSidebar">
+        <div class="app-sidebar-header" 
+        [style.border-bottom]="borderSidebarHeader"
+        [style.color]="colorSidebarHeader" fxLayout="row" fxLayoutAlign="center center">
+            <mat-icon style="margin-right: 10px;" *ngIf="headerIcon">{{headerIcon}}</mat-icon> {{headerText}}
+        </div>
+        <div fxFlex fxLayout="column" fxLayoutAlign="start start" style="overflow: auto; width: 100%;overflow-x: hidden;">
+
+            <div  *ngFor="let item of arrMenuOptions" class="app-sidebar-item"
+            [style.border-top]="borderMenuItems" flexLayout="row" fxLayout="row"
+                fxLayoutAlign="start stretch" (click)="selectMenu(item.id,item.route)" libColor>
+
+                <div style="height: 100%; width: 10px;"  [ngStyle]="{'background': badgeColor}"
+                [@enterAnimation] *ngIf="activeMenu === item.id">
+
+                </div>
+                <div fxLayout="column" fxLayoutAlign="center start" style="margin-left: 10px"  >
+                    <div  fxLayout="row" fxLayoutAlign="center center" >
+                        <mat-icon style="margin-right: 10px;" *ngIf="item.icon" >{{item.icon}}</mat-icon>
+                         <span   >{{item.title}}</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="app-sidebar-footer" style="overflow-x: hidden;"
+        [style.border-top]="borderSidebarFooter" fxLayout="row" fxLayoutAlign="center center">
+            <button mat-button (click)="logout()">
+                <mat-icon style="margin-right: 10px;" *ngIf="logoutIcon">{{logoutIcon}}</mat-icon>{{textLogout}}
+            </button>
+        </div>
+    </div
+    >
+
+    <div style="height: 100%;width:100%; min-width: 0px !important;" fxLayout="column" fxLayoutAlign="space-between stretch">
+        <div *ngIf="show" class="app-header">
+            <ngx-mat-menu-header [theme]="themeHeader" [visibleNotif]="visibleNotif" [srcLogo]="srcLogo" 
+            [widthLogo]="widthLogo" [heightLogo]="heightLogo" (showMenu)="setMenu($event)" (showNotif)="showNotif($event)" [badge]="badge"
+            [borderHeader]="borderHeader"></ngx-mat-menu-header>
+        </div>
+        <div fxFlex (swipeleft)="showMenu ? setMenu(false) : ''" 
+        (swiperight)="show === true ? setMenu(true) : null" style="height: 100%; width: 100%;">
+            <ng-content></ng-content>
+        </div>
+    </div>
+
+    <div class="app-small-blur" style="height: 100%;width: 100%; position: absolute;"
+        *ngIf="showMenu && showHeader && posSidebar === 'absolute'" (click)="setMenu(false)"
+        (swipeleft)="setMenu(false)">
+    </div>
+</div>

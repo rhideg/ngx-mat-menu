@@ -1,0 +1,19 @@
+<div 
+style="height: 100%;"  
+[ngStyle]="theme"
+[style.border]="borderHeader"
+fxLayout="row" fxLayoutAlign="space-between center">
+    <div>
+        <button mat-icon-button (click)="btnShowMenu_Click()">
+            <mat-icon>menu</mat-icon>
+        </button>
+    </div>
+    <div>
+        <img [src]="srcLogo" [ngStyle]="{'height': heightLogo, 'width': widthLogo}"  style="height: 60px; ">
+    </div>
+    <div>
+        <button mat-icon-button *ngIf="visibleNotif">
+            <mat-icon (click)="btnShowNotif_Click()" [matBadge]="badge" matBadgeColor="warn" matBadgePosition="before" [matBadgeHidden]="badge == 0">notifications_none</mat-icon>
+        </button>
+    </div>
+</div>

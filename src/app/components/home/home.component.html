@@ -1,0 +1,122 @@
+<div fxLayout="column" style="width: 100%; height: 100%; overflow: auto;">
+
+    <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="margin: 15px;">
+
+        <!--- Note that these columns can be defined in any order.
+                  The actual rendered columns are set as a property on the row definition" -->
+
+        <!-- Position Column -->
+        <ng-container matColumnDef="position">
+            <th mat-header-cell *matHeaderCellDef> No. </th>
+            <td mat-cell *matCellDef="let element"> {{element.position}} </td>
+        </ng-container>
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+            <th mat-header-cell *matHeaderCellDef> Name </th>
+            <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- Weight Column -->
+        <ng-container matColumnDef="weight">
+            <th mat-header-cell *matHeaderCellDef> Weight </th>
+            <td mat-cell *matCellDef="let element"> {{element.weight}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="symbol">
+            <th mat-header-cell *matHeaderCellDef> Symbol </th>
+            <td mat-cell *matCellDef="let element"> {{element.symbol}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="oraallas">
+            <th mat-header-cell *matHeaderCellDef> Oraallas </th>
+            <td mat-cell *matCellDef="let element"> {{element.oraallas}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="counter">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="a">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="s">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="d">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="f">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="g">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="h">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="j">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="k">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="l">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <!-- Symbol Column -->
+        <ng-container matColumnDef="m">
+            <th mat-header-cell *matHeaderCellDef> Counter </th>
+            <td mat-cell *matCellDef="let element"> {{element.counter}} </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+    </table>
+
+    <button mat-button (click)="openDialog()">DIALOG TEST</button>
+
+    <button mat-button (click)="changeMenu()">Change Menu</button>
+
+   
+
+</div>

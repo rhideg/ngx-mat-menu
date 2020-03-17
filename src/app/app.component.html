@@ -1,0 +1,20 @@
+<ngx-mat-menu style="height: 100%;width: 100%;" 
+[arrMenuOptions]="arrMenuOptions" 
+[headerText]="headerText"
+[badgeColor]="badgeColor" 
+[headerIcon]="headerIcon" 
+[logoutIcon]="logoutIcon"
+[srcLogo]="srcLogo" 
+[heightLogo]="heightLogo"
+[widthLogo]="widthLogo"
+[lang]="lang" 
+[themeSidebar]="themeSidebar" 
+[themeHeader]="themeHeader" 
+[visibleNotif]="visibleNotif"
+[badge]="badge"
+[colorSidebarHeader]="'white'"
+[defaultWidth]="'400px'"
+(openNotif)="openNotif($event)"
+(logoutEvent)="logout()">
+    <router-outlet></router-outlet>
+</ngx-mat-menu>

@@ -1,0 +1,50 @@
+.app-sidebar {
+    transition: all 0.4s;
+    overflow: auto;
+    margin: 0px !important;
+    height: 100%;
+    
+    background: white;
+    z-index: 900;
+  }
+  
+  .app-sidebar-header {
+    height: 60px;
+    //border-bottom: 0.5px solid lightgray;
+    width: 100%;
+  }
+  
+  .app-sidebar-footer {
+    height: 60px;
+    //border-top: 1px solid lightgray;
+    width: 100%;
+  }
+  
+  .app-sidebar-item {
+    height: 60px;
+    //border-bottom: 0.5px solid lightgray;
+    width: 100%;
+    cursor: pointer;
+  }
+
+  .app-sidebar-item:hover {
+    //background: rgb(165, 165, 165);
+    //border-right: 0.5px solid lightgray;
+    //opacity: .4;
+    font-weight: 500; 
+  }
+  
+  .app-small-blur {
+    z-index: 800;
+    background-color: #000000;
+    opacity: 0.4;
+  }
+  
+  .app-header {
+    transition: all 0.5s;
+    height: 60px;
+    background: white;
+  }
+  
+  
+  
