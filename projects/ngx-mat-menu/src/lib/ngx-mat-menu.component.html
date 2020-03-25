@@ -5,7 +5,8 @@
         [style.border]="borderSidebar">
 
         <!-- SIDEBAR HEADER -->
-        <div class="app-sidebar-header" [style.border-bottom]="borderSidebarHeader" [style.color]="colorSidebarHeader">
+        <div class="app-sidebar-header" [style.border-bottom]="borderSidebarHeader" 
+        [ngStyle]="themeSidebarHeader">
             <!-- 
             <div fxLayout="row" fxLayoutAlign="center center">
                 <mat-icon style="margin-right: 10px;" *ngIf="headerIcon">{{headerIcon}}</mat-icon> {{headerText}}

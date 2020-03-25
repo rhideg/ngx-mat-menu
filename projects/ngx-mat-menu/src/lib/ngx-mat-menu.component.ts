@@ -39,6 +39,8 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
 
   @Input() themeSidebar: Theme;
   @Input() themeHeader: Theme;
+  @Input() themeSidebarHeader: Theme;
+
   @Input() arrMenuOptions: Array<MenuOptions>; // required
   @Input() logoutIcon: string; // optional
   @Input() badgeColor: string; // optional, default is black
@@ -49,13 +51,12 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   @Input() visibleNotif: boolean; // optional, default is false/undefined
   @Input() badge: number; // number of notifications
   @Input() defaultWidth: string; // default width of the menu sidebar
-  @Input() colorSidebarHeader: string;
   @Input() borderHeader: string;
   @Input() borderSidebar: string;
   @Input() borderSidebarHeader: string;
   @Input() borderSidebarFooter: string;
   @Input() borderMenuItems: string;
-  @Input() headerPicture: string; 
+  @Input() headerPicture: string = 'https://www.biography.com/.image/t_share/MTY2MzU3Nzk2OTM2MjMwNTkx/elon_musk_royal_society.jpg'; 
   @Input() headerTitle: string;
   @Input() headerTitleColor: string;
   @Input() headerSubtitle: string;
