@@ -2,7 +2,7 @@
 
 ⚡ Try it on [StackBlitz](https://stackblitz.com/edit/angular-lnjubx)!
 
-![Menu](https://i.imgur.com/ZzhkPx1.png "Material Menu")
+![Menu](https://i.imgur.com/nxQ24Od.png "Material Menu")
 
 # Getting started
 
