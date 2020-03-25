@@ -9,6 +9,7 @@ import { Router } from '@angular/router';
 })
 export class AppComponent {
   
+  
   themeSidebar: Theme;
   themeHeader: Theme;
   arrMenuOptions: MenuOptions[];
