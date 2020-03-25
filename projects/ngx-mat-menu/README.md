@@ -1,8 +1,8 @@
 # Angular Material Menu
 
-⚡ Try it on StackBlitz: [ngx-mat-menu DEMO](https://stackblitz.com/edit/angular-lnjubx?file=src%2Fapp%2Fapp.component.ts)
+⚡ Try it on [StackBlitz](https://stackblitz.com/edit/angular-lnjubx)!
 
-![Menu](https://i.imgur.com/GerRh1H.png "Material Menu")
+![Menu](https://i.imgur.com/ZzhkPx1.png "Material Menu")
 
 # Getting started
 
