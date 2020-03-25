@@ -40,8 +40,6 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   @Input() themeSidebar: Theme;
   @Input() themeHeader: Theme;
   @Input() arrMenuOptions: Array<MenuOptions>; // required
-  @Input() headerText: string; // required
-  @Input() headerIcon: string; // optional
   @Input() logoutIcon: string; // optional
   @Input() badgeColor: string; // optional, default is black
   @Input() srcLogo: string; // optional
@@ -57,6 +55,11 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   @Input() borderSidebarHeader: string;
   @Input() borderSidebarFooter: string;
   @Input() borderMenuItems: string;
+  @Input() headerPicture: string; 
+  @Input() headerTitle: string;
+  @Input() headerTitleColor: string;
+  @Input() headerSubtitle: string;
+  @Input() headerSubtitleColor: string;
   @Output() openNotif = new EventEmitter();
   @Output() logoutEvent = new EventEmitter();
   constructor(

@@ -37,8 +37,8 @@ export class HomeComponent implements OnInit {
   mutat: boolean = true;
 
   constructor(
-    private menuService: NgxMatMenuService,
-    public dialog: MatDialog
+    public dialog: MatDialog,
+    private menuService: NgxMatMenuService
   ) {
     menuService.changeMenu(true);
     menuService.selectMenu(0);

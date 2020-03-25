@@ -14,6 +14,10 @@ import { MatTableModule } from '@angular/material/table';
 import { DialogTestComponent } from './dialogs/dialog-test/dialog-test.component';
 import { MatButtonModule } from '@angular/material/button';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AddComponent } from './components/add/add.component';
+import { EditComponent } from './components/edit/edit.component';
+import { DeleteComponent } from './components/delete/delete.component';
+import { ListComponent } from './components/list/list.component';
 
 
 @NgModule({
@@ -23,6 +27,10 @@ import { MatDialogModule } from '@angular/material/dialog';
     HomeComponent,
     SettingsComponent,
     DialogTestComponent,
+    AddComponent,
+    EditComponent,
+    DeleteComponent,
+    ListComponent,
   ],
   imports: [
     BrowserModule,

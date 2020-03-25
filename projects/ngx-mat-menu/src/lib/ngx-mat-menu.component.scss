@@ -9,7 +9,7 @@
   }
   
   .app-sidebar-header {
-    height: 60px;
+    height: 150px;
     //border-bottom: 0.5px solid lightgray;
     width: 100%;
   }
@@ -44,6 +44,32 @@
     transition: all 0.5s;
     height: 60px;
     background: white;
+  }
+
+
+  // Material design:
+  .material-selected-menu {
+    border-radius: 5px; background-color: rgba(138, 138, 138, 0.4); margin: 5px;
+  }
+
+  .app-header-picture {
+    width: 50px;
+                    height: 50px;
+                    border-radius: 100%;
+                    background-size: cover;
+                    margin-left: 15px;
+  }
+
+  .app-header-title {
+    margin-left: 15px; 
+    font-size: large; 
+    font-weight: 500;
+  }
+
+  .app-header-subtitle {
+    margin-left: 15px; 
+    margin-top: 5px; 
+    font-size: medium;
   }
   
   
