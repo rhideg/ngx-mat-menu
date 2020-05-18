@@ -31,11 +31,12 @@ export class AppComponent {
     this.themeHeader = {background: 'white', color: 'gray'};
     this.arrMenuOptions = [
       {id: 0, title: 'Home', icon: 'home', route: 'home'},
-      {id: 1, title: 'Settings', icon: 'settings', route: 'settings'},
-      {id: 2, title: 'Add', icon: 'add', route: 'add'},
-      {id: 3, title: 'Edit', icon: 'edit', route: 'edit'},
-      {id: 4, title: 'Delete', icon: 'delete', route: 'delete'},
-      {id: 5, title: 'List', icon: 'list', route: 'list'},
+      {id: 1, title: 'Settings', icon: 'settings', route: 'settings', children: [
+        {id: 2, title: 'Add', icon: 'add', route: 'add'},
+        {id: 3, title: 'Edit', icon: 'edit', route: 'edit'},
+        {id: 4, title: 'Delete', icon: 'delete', route: 'delete'},
+
+      ]},
     ];
     this.badgeColor = 'white';
     this.logoutIcon = undefined;
@@ -48,6 +49,12 @@ export class AppComponent {
     console.log(event);
     this.badge = 0;
   }
+
+  profileClick(event) {
+    console.log(event);
+  }
+
+
   logout() {
     console.log("logout")
     this.router.navigate(['']);

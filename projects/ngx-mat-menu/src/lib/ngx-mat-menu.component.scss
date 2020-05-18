@@ -1,76 +1,93 @@
 .app-sidebar {
-    transition: all 0.4s;
-    overflow: auto;
-    margin: 0px !important;
-    height: 100%;
-    
-    background: white;
-    z-index: 900;
-  }
-  
-  .app-sidebar-header {
-    height: 150px;
-    //border-bottom: 0.5px solid lightgray;
-    width: 100%;
-  }
-  
-  .app-sidebar-footer {
-    height: 60px;
-    //border-top: 1px solid lightgray;
-    width: 100%;
-  }
-  
-  .app-sidebar-item {
-    height: 60px;
-    //border-bottom: 0.5px solid lightgray;
-    width: 100%;
-    cursor: pointer;
-  }
+  transition: all 0.4s;
+  overflow: auto;
+  margin: 0px !important;
+  height: 100%;
 
-  .app-sidebar-item:hover {
-    //background: rgb(165, 165, 165);
-    //border-right: 0.5px solid lightgray;
-    //opacity: .4;
-    font-weight: 500; 
-  }
-  
-  .app-small-blur {
-    z-index: 800;
-    background-color: #000000;
-    opacity: 0.4;
-  }
-  
-  .app-header {
-    transition: all 0.5s;
-    height: 60px;
-    background: white;
-  }
+  background: white;
+  z-index: 900;
+}
 
+.app-sidebar-header {
+  height: 150px;
+  //border-bottom: 0.5px solid lightgray;
+  width: 100%;
+}
 
-  // Material design:
-  .material-selected-menu {
-    border-radius: 5px; background-color: rgba(138, 138, 138, 0.4); margin: 5px;
-  }
+.app-sidebar-footer {
+  height: 60px;
+  //border-top: 1px solid lightgray;
+  width: 100%;
+}
 
-  .app-header-picture {
-    width: 50px;
-                    height: 50px;
-                    border-radius: 100%;
-                    background-size: cover;
-                    margin-left: 15px;
-  }
+.app-sidebar-item {
+  height: 60px;
+  //border-bottom: 0.5px solid lightgray;
+  width: 100%;
+  cursor: pointer;
+}
 
-  .app-header-title {
-    margin-left: 15px; 
-    font-size: large; 
-    font-weight: 500;
-  }
+.app-sidebar-item:hover {
+  //background: rgb(165, 165, 165);
+  //border-right: 0.5px solid lightgray;
+  //opacity: .4;
+  font-weight: 500;
+}
 
-  .app-header-subtitle {
-    margin-left: 15px; 
-    margin-top: 5px; 
-    font-size: medium;
-  }
-  
-  
-  
+.app-small-blur {
+  z-index: 800;
+  background-color: #000000;
+  opacity: 0.4;
+}
+
+.app-header {
+  transition: all 0.5s;
+  height: 60px;
+  background: white;
+}
+
+// Material design:
+.material-selected-menu {
+  border-radius: 5px;
+  background-color: rgba(138, 138, 138, 0.4);
+  margin: 5px;
+}
+
+.app-header-picture {
+  width: 50px;
+  height: 50px;
+  border-radius: 100%;
+  background-size: cover;
+  margin-left: 15px;
+  cursor: pointer;
+}
+
+.app-header-title {
+  margin-left: 15px;
+  font-size: large;
+  font-weight: 500;
+}
+
+.app-header-subtitle {
+  margin-left: 15px;
+  margin-top: 5px;
+  font-size: medium;
+}
+
+.expandable-item {
+  border: 0px solid transparent;
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0px !important;
+}
+
+.sub-item-list {
+  transition: all 0.4s;
+}
+
+.expansion-header {
+}
+
+::ng-deep .expansion-header > .mat-expansion-indicator:after {
+  color: white;
+}

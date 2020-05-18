@@ -35,8 +35,6 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   textLogout: string;
   hover: boolean = false;
 
-
-
   @Input() themeSidebar: Theme;
   @Input() themeHeader: Theme;
   @Input() themeSidebarHeader: Theme = {background: 'white', color: ''};
@@ -61,8 +59,10 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   @Input() headerTitleColor: string;
   @Input() headerSubtitle: string;
   @Input() headerSubtitleColor: string;
+
   @Output() openNotif = new EventEmitter();
   @Output() logoutEvent = new EventEmitter();
+  @Output() profileClick = new EventEmitter();
   constructor(
     private menuService: NgxMatMenuService,
     private router: Router
@@ -142,14 +142,37 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
 
   }
 
+  /**
+   * Expandable menu item height change
+   * @param id Id of item and expandable element
+   */
+  expandMenu(id: number) {
+    console.log(document.getElementById(id.toString()).offsetHeight);
+    if (document.getElementById(id.toString()).offsetHeight === 0) {
+      document.getElementById(id.toString()).style.height = 'auto';
+      document.getElementById(id.toString()).style.display = 'block';
+
+    } else {
+      document.getElementById(id.toString()).style.height = '0px';
+      document.getElementById(id.toString()).style.display = 'none';
+    }
+    
+  }
+
   // Output:
   showNotif(event) {
     this.openNotif.emit(event);
   }
 
-  selectMenu(selected: number, route: string) {
-    this.menuService.selectMenu(selected);
-    this.router.navigate([`${route}`]);
+  selectMenu(selected: number, route?: string) {
+    if (route) {
+      this.menuService.selectMenu(selected);
+      this.router.navigate([`${route}`]); 
+    }
+  }
+
+  profile_Click(event) {
+    this.profileClick.emit(event)
   }
 
   logout() {

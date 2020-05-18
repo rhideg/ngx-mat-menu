@@ -9,6 +9,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { NgxMatMenuComponent } from './ngx-mat-menu.component';
 import { ColorDirective } from './directives/color.directive';
 import { MatBadgeModule } from '@angular/material/badge';
+import {MatExpansionModule} from '@angular/material/expansion';
 
 
 @NgModule({
@@ -22,7 +23,8 @@ import { MatBadgeModule } from '@angular/material/badge';
     MatFormFieldModule,
     CommonModule,
     BrowserModule,
-    MatBadgeModule
+    MatBadgeModule,
+    MatExpansionModule
   ],
   exports: [NgxMatMenuComponent]
 })
