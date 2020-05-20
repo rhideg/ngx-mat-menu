@@ -165,6 +165,7 @@ export class NgxMatMenuComponent implements OnInit, OnChanges {
   }
 
   selectMenu(selected: number, route?: string) {
+    console.log(route);
     if (route) {
       this.menuService.selectMenu(selected);
       this.router.navigate([`${route}`]); 

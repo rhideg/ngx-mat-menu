@@ -31,14 +31,14 @@ export class AppComponent {
     this.themeHeader = {background: 'white', color: 'gray'};
     this.arrMenuOptions = [
       {id: 0, title: 'Home', icon: 'home', route: 'home'},
+      // {divider: true},
       {id: 1, title: 'Settings', icon: 'settings', route: 'settings', children: [
         {id: 2, title: 'Add', icon: 'add', route: 'add'},
         {id: 3, title: 'Edit', icon: 'edit', route: 'edit'},
         {id: 4, title: 'Delete', icon: 'delete', route: 'delete'},
-
-      ]},
+      ]}
     ];
-    this.badgeColor = 'white';
+    this.badgeColor = '#9ee6b1';
     this.logoutIcon = undefined;
     this.srcLogo = 'assets/de_logo_new.png';
     this.lang = 'en';

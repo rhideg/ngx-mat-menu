@@ -24,7 +24,7 @@ import {MatExpansionModule} from '@angular/material/expansion';
     CommonModule,
     BrowserModule,
     MatBadgeModule,
-    MatExpansionModule
+    MatExpansionModule,
   ],
   exports: [NgxMatMenuComponent]
 })

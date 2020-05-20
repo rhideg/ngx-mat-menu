@@ -6,3 +6,7 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
 .mat-dialog {
     z-index: 50000;
 }
+
+::ng-deep .expansion-header > .mat-expansion-indicator:after {
+    color: white;
+}

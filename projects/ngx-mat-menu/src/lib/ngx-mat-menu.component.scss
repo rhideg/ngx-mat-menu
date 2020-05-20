@@ -21,9 +21,10 @@
 }
 
 .app-sidebar-item {
-  height: 60px;
+  height: 45px;
   //border-bottom: 0.5px solid lightgray;
-  width: 100%;
+  width: calc(100% - 10px);
+  margin: 5px;
   cursor: pointer;
 }
 
@@ -50,7 +51,7 @@
 .material-selected-menu {
   border-radius: 5px;
   background-color: rgba(138, 138, 138, 0.4);
-  margin: 5px;
+  // margin: 5px;
 }
 
 .app-header-picture {
@@ -88,6 +89,23 @@
 .expansion-header {
 }
 
+.mat-expansion-panel-header {
+  padding: 0px !important;
+  height: 60px;
+}
+
+/*
+.mat-expansion-panel-header.mat-expanded,
+.mat-expansion-panel-header.mat-expanded:hover,
+.mat-expansion-panel-header.mat-expanded:focus {
+  border-radius: 5px;
+  background-color: rgba(138, 138, 138, 0.4);
+  margin: 5px;
+}
+*/
+
+/*
 ::ng-deep .expansion-header > .mat-expansion-indicator:after {
   color: white;
 }
+*/
